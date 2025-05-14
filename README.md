@@ -6,6 +6,7 @@ Check out our GRM series below, which are evlauated on [reward-bench](https://hu
 
 Performance on Flan-T5(2024, GOOGLE) series models
 
+
 |       Approaches               | Xsum(ROUGE1)       |  MT EN-NL(BLEU4)     |     GSM8K(ACCURACY)      |   
 |:-------------------------:|:-------------:|:---------:|:---------:|:--------:|:-----------:|
 |Prompt Teacher**(Flan-T5-3B)**| 41.32 | 25.36 | 40.71 |
