@@ -52,14 +52,5 @@ sh distill_xsum.sh
 sh reinforce_xsum.sh
 ```
 
-#### PPO
-Go to the `scripts/rlhf/ppo' folder and train the gemma-2b-it model with the default parameters.
 
-**Note: please set the path to your reward model in the corresponding shells.**
-```
-cd scripts/rlhf/ppo
-sh train_ppo.sh
-sh train_ppo.grm.sh
-sh train_ppo_ensemble.sh
-```
 
