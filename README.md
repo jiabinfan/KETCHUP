@@ -25,7 +25,7 @@ Performance on Qwen1.5(2024, Alibaba) series models
 |       Approaches               | Xsum(ROUGE1)       |  MT EN-NL(BLEU4)     |     GSM8K(ACCURACY)      |   
 |:-------------------------:|:-------------:|:---------:|:---------:|
 |Prompt Teacher**(Qwen1.5-4B)**| 38.15 |21.36 |40.71|
-|Prompt Student**(T5-0.4B)**|8.80|0.51|0|
+|Prompt Student**(T5-0.5B)**|8.80|0.51|0|
 |SeqKD||||
 |KL||||
 |JS||||
