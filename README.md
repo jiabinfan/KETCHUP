@@ -2,7 +2,6 @@
 
 ## Models
 
-Check out our GRM series below, which are evlauated on [reward-bench](https://huggingface.co/spaces/allenai/reward-bench).
 
 Performance on Flan-T5(2024, GOOGLE) series models
 
@@ -21,7 +20,8 @@ Performance on Flan-T5(2024, GOOGLE) series models
 |KETCHUP(best K)|36.03|22.95|25.71|
 
 
-Performance on Qwen1.5(2024, Alibaba) series models
+KD research on the Seq2seq task is usually conducted on T5 series models(Wen et al 2023, Li et al 2024, Agarwal et al 2024). 
+However, Reviewers may be curious about the performance of KETCHUP on decoder-only based models. Here we applied our approach on Qwen1.5(2024, Alibaba) series models to verify such curiosity.
 |       Approaches               | Xsum(ROUGE1)       |  MT EN-NL(BLEU4)     |     GSM8K(ACCURACY)      |   
 |:-------------------------:|:-------------:|:---------:|:---------:|
 |Prompt Teacher**(Qwen1.5-4B)**| 38.15 |21.36 |40.71|
