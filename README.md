@@ -25,14 +25,10 @@ KD studies on seq2seq tasks have largely centred on encoder-decoder structures s
 |:-------------------------:|:-------------:|:---------:|:---------:|
 |Prompt Teacher**(Qwen1.5-4B)**| 38.15 |21.36 |40.71|
 |Prompt Student**(T5-0.5B)**|8.80|0.51|0|
-|SeqKD||||
-|KL||||
-|JS||||
-|TVD||||
-|LLMR||||
-|LLMR + Mean baseline||||
-|LLMR + Min-Var baseline||||
-|KETCHUP(best K)||||
+|KL|31.29|15.76|26.31|
+|TVD|31.18|16.22|26.99|
+|LLMR|31.61|15.90|27.29|
+|KETCHUP(best K)|32.28|16.46|28.13|
 ## Usage 
 First set the environment variable.
 ```
@@ -47,8 +43,8 @@ pip install -r requirements.txt
 **Note: please set the path to your dataset, student model, and teacher model in the corresponding shells.**
 ```
 cd scripts
-sh distill_xsum.sh
-sh reinforce_xsum.sh
+sh distill_xsum.sh #non-RL distillation
+sh reinforce_xsum.sh  #RL distillation
 ```
 
 
