@@ -9,7 +9,7 @@ Performance on Flan-T5(2024, GOOGLE) series models. The best K values are 2, 4, 
 |       Approaches               | Xsum(ROUGE1)       |  MT EN-NL(BLEU4)     |     GSM8K(ACCURACY)      |   
 |:-------------------------:|:-------------:|:---------:|:---------:|
 |Prompt Teacher**(Flan-T5-3B)**| 41.32 | 25.36 | 40.71 |
-|Prompt Student**(T5-0.4B)**|1 9.60 | 0.95 | 0.00 |
+|Prompt Student**(T5-0.4B)**|19.60 | 0.95 | 0.00 |
 |SeqKD| 33.54 | 22.09 | 20.02 |
 |KL| 34.36 | 22.35 | 23.96 |
 |JS| 34.87 |22.55|24.72|
@@ -23,7 +23,7 @@ Performance on Flan-T5(2024, GOOGLE) series models. The best K values are 2, 4, 
 KD studies on seq2seq tasks have largely centred on encoder-decoder structures such as T5 and BART models. To answer reviewers’ likely question about KETCHUP’s behaviour on recent popular decoder-only architectures, we also applied it to the Qwen1.5 model series and report the results in the following table. The best K values are 2, 2, and 16 for the three datasets, respectively.
 |       Approaches               | Xsum(ROUGE1)       |  MT EN-NL(BLEU4)     |     GSM8K(ACCURACY)      |   
 |:-------------------------:|:-------------:|:---------:|:---------:|
-|Prompt Teacher**(Qwen1.5-4B)**| 38.15 |21.36 |40.71|
+|Prompt Teacher**(Qwen1.5-4B)**| 38.15 |21.32 |40.71|
 |Prompt Student**(Qwen1.5-0.5B)**|8.80|0.51|0|
 |KL|31.29|15.76|26.31|
 |TVD|31.18|16.22|26.99|
