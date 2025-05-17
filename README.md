@@ -3,7 +3,7 @@
 ## Models
 
 
-Performance on Flan-T5(2024, GOOGLE) series models
+Performance on Flan-T5(2024, GOOGLE) series models. The best K values are 2, 4, and 8 for the three datasets, respectively.
 
 
 |       Approaches               | Xsum(ROUGE1)       |  MT EN-NL(BLEU4)     |     GSM8K(ACCURACY)      |   
@@ -20,8 +20,7 @@ Performance on Flan-T5(2024, GOOGLE) series models
 |KETCHUP(best K)|36.03|22.95|25.71|
 
 
-KD research on the Seq2seq task is usually conducted on T5 series models(Wen et al 2023, Li et al 2024, Agarwal et al 2024). 
-However, Reviewers may be curious about the performance of KETCHUP on decoder-only based models. Here we applied our approach on Qwen1.5(2024, Alibaba) series models to verify such curiosity.
+KD studies on seq2seq tasks have largely centred on encoder-decoder structures such as T5 and BART models. To answer reviewers’ likely question about KETCHUP’s behaviour on recent popular decoder-only architectures, we also applied it to the Qwen1.5 model series and report the results in the following table. The best K values are 2, 2, and 16 for the three datasets, respectively.
 |       Approaches               | Xsum(ROUGE1)       |  MT EN-NL(BLEU4)     |     GSM8K(ACCURACY)      |   
 |:-------------------------:|:-------------:|:---------:|:---------:|
 |Prompt Teacher**(Qwen1.5-4B)**| 38.15 |21.36 |40.71|
