@@ -1,9 +1,9 @@
-# KETCHUP: KETCHUP: K-Step Return Estimation for Sequential Knowledge Distillation
+# BRIM: Block-wise Return Induction Method for Sequence Knowledge Distillation
 
 ## Models
 
 
-Performance on Flan-T5(2024, GOOGLE) series models. The best K values are 2, 4, and 8 for the three datasets, respectively.
+Performance on Flan-T5(2024, GOOGLE) series models. The best K values are 2, 2, and 8 for the three datasets, respectively.
 
 
 |       Approaches               | Xsum(ROUGE1)       |  MT EN-NL(BLEU4)     |     GSM8K(ACCURACY)      |   
@@ -17,10 +17,10 @@ Performance on Flan-T5(2024, GOOGLE) series models. The best K values are 2, 4, 
 |LLMR|35.54|22.72|25.21|
 |LLMR + Mean baseline|35.60|22.67|25.39|
 |LLMR + Min-Var baseline|35.59|22.70|25.10|
-|KETCHUP(best K)|36.03|22.95|25.71|
+|BRIM(best K)|36.03|22.95|26.38|
 
 
-KD studies on seq2seq tasks have largely centred on encoder-decoder structures such as T5 and BART models. To answer reviewers’ likely question about KETCHUP’s behaviour on recent popular decoder-only architectures, we also applied it to the Qwen1.5 model series and report the results in the following table. The best K values are 2, 2, and 16 for the three datasets, respectively.
+KD studies on seq2seq tasks have largely centred on encoder-decoder structures such as T5 and BART models. To answer reviewers’ likely question about BRIM’s behaviour on recent popular decoder-only architectures, we also applied it to the Qwen1.5 model series and report the results in the following table. The best K values are 2, 2, and 16 for the three datasets, respectively.
 |       Approaches               | Xsum(ROUGE1)       |  MT EN-NL(BLEU4)     |     GSM8K(ACCURACY)      |   
 |:-------------------------:|:-------------:|:---------:|:---------:|
 |Prompt Teacher**(Qwen1.5-4B)**| 38.15 |21.32 |42.08|
@@ -28,7 +28,7 @@ KD studies on seq2seq tasks have largely centred on encoder-decoder structures s
 |KL|31.29|15.76|26.31|
 |TVD|31.18|16.22|26.99|
 |LLMR|31.61|15.90|27.29|
-|KETCHUP(best K)|32.28|16.46|28.13|
+|BRIM(best K)|32.28|16.46|28.13|
 ## Usage 
 First set the environment variable.
 ```
