@@ -17,7 +17,7 @@ Performance on Flan-T5(2024, GOOGLE) series models. The best K values are 2, 2, 
 |LLMR|35.54|22.72|25.21|
 |LLMR + Mean baseline|35.60|22.67|25.39|
 |LLMR + Min-Var baseline|35.59|22.70|25.10|
-|BRIM(best K)|36.03|22.95|26.38|
+|BRIM(best K)|36.63|22.95|26.38|
 
 
 KD studies on seq2seq tasks have largely centred on encoder-decoder structures such as T5 and BART models. To answer reviewers’ likely question about BRIM’s behaviour on recent popular decoder-only architectures, we also applied it to the Qwen1.5 model series and report the results in the following table. The best K values are 2, 2, and 16 for the three datasets, respectively.
