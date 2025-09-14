@@ -9,7 +9,7 @@ Performance on Flan-T5(2024, GOOGLE) series models. The best K values are 2, 2, 
 |       Approaches               | Xsum(ROUGE1)       |  MT EN-NL(BLEU4)     |     GSM8K(ACCURACY)      |   
 |:-------------------------:|:-------------:|:---------:|:---------:|
 |Prompt Teacher**(Flan-T5-3B)**| 41.32 | 25.36 | 40.71 |
-|Prompt Student**(T5-0.4B)**|19.60 | 0.95 | 0.00 |
+|Prompt Student**(Flan-T5-0.4B)**|19.60 | 0.95 | 0.00 |
 |SeqKD| 33.54 | 22.09 | 20.02 |
 |KL| 34.36 | 22.35 | 23.96 |
 |JS| 34.87 |22.55|24.72|
